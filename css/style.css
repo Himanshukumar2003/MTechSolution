@@ -1387,6 +1387,18 @@ video {
     .welcome-content.specialized{bottom: 0 !important}
 }
 
+
+@media (max-width: 395px){
+    #start-btn{
+margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
 .main-ilustration-6{
     position: relative;
     background: url(../img/core-img/about-1.html) no-repeat center 65%;
@@ -5661,17 +5673,24 @@ padding-bottom: 0px !important;
 
 .footer-contect{
  display: flex;
- align-items: center;  
- gap:20px ; 
+ align-items: center; 
+ flex-direction: column; 
+ overflow: hidden;
+ object-fit: contain;
+ gap:10px ;
  justify-content: center;
- width: 100%;
 }
+
+
+
+
 
 .contectDetails{
     width: 100%;
-    padding-left:1.5rem!important;
     border-left: 1px solid rgba(255,255,255,0.1) !important ;
 }
+
+
 
 .footer h5 {
     margin-bottom: 20px;
@@ -5721,10 +5740,12 @@ color:#0166aa !important;
     margin-top: 0;
     margin-bottom: .5rem;
     font-weight: 500;
-    line-height: 1.2;
+    font-size: 21px;
+    line-height: 2;
 }
 #footer-header span{
 color: rgba(245, 241, 241, 0.8) !important;
+font-size: 16px;
 }
 
 
@@ -6048,6 +6069,16 @@ margin-bottom: 50px !important;
 @media (max-width: 767px) { /* Small devices (phones, 767px and below) */
   .card-container {
     margin-top: 20px;
+  }
+  .chouseUS-cards{
+    flex-direction: column !important;
+    align-items: center !important;
+
+  }
+
+  .number-box{
+    justify-content: center;
+    ;
   }
 }
 
