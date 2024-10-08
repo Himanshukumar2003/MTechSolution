@@ -550,7 +550,6 @@ ol {
     margin-bottom: 0;
     line-height: 2;
     font-size: 16px;
-    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -5625,6 +5624,11 @@ body.light-version {
     height: auto;
     border-radius: 5px;
 }
+
+.image-container{
+
+}
+
 .border-line{
 width: 100px;
 background-color: #0166aa;
@@ -5892,7 +5896,7 @@ margin-bottom: 50px !important;
 .company-card {
     transition: transform 0.5s ease, border-radius 0.5s ease, border 0.5s ease;
     border-radius: 20px;
-    border: 2px solid orange !important;
+    border: 2px solid #0166aa !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -5974,7 +5978,7 @@ margin-bottom: 50px !important;
   }
   
   .about-img{
-  
+  height: 100%;
       clip-path: polygon(0% 0%, 100% 0, 100% 87%, 87% 100%, 0% 100%);
   }
   
@@ -5992,7 +5996,6 @@ margin-bottom: 50px !important;
    
 }
 
-/* Style for the nested dropdown */
 .dropdown-submenu {
     position: relative;
 }
@@ -6000,11 +6003,9 @@ margin-bottom: 50px !important;
 
 .dropdown-submenu .dropdown-menu {
     display: none;
-    /* Position to the right */
-    /* Align to the top */
+    
 }
 
-/* Show nested dropdown on hover */
 .dropdown-submenu:hover .dropdown-submenu-menu {
     display: block !important;
     position: absolute;
@@ -6031,10 +6032,9 @@ margin-bottom: 50px !important;
 
 
 
-/* why couse us */
 
 .right-section {
-    margin-left: -10rem; /* This margin will apply to larger screens */
+    margin-left: -10rem; 
     z-index: 99;
 }
 
@@ -6051,13 +6051,13 @@ margin-bottom: 50px !important;
 }
 
 .number {
-    font-size: 1.25rem; /* Font size of the number */
-    color: #1f2937; /* Dark gray color */
+    font-size: 1.25rem; 
+    color: #1f2937; 
 }
 
-@media (max-width: 1400px) { /* Medium devices (tablets, 768px and up) */
+ @media (max-width: 1400px) { 
   .right-section {
-    margin-left: 0px !important; /* Remove the margin on smaller screens */
+    margin-left: 0px !important; 
   }
 }
 
@@ -6066,8 +6066,16 @@ margin-bottom: 50px !important;
 
 
 
-@media (max-width: 767px) { /* Small devices (phones, 767px and below) */
-  .card-container {
+@media (max-width: 767px) { 
+    .dropdown-submenu:hover .dropdown-submenu-menu {
+        display: block !important;
+        position: static !important;
+       
+    }
+    
+  
+  
+    .card-container {
     margin-top: 20px;
   }
   .chouseUS-cards{
