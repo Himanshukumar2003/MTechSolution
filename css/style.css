@@ -6085,6 +6085,7 @@ margin-bottom: 50px !important;
 
 
 
+
 @media (max-width: 1580px) { 
     .dropdown-submenu:hover .dropdown-submenu-menu {
         display: block !important;
@@ -6097,11 +6098,7 @@ margin-bottom: 50px !important;
     .card-container {
     margin-top: 20px;
   }
-  .chouseUS-cards{
-    flex-direction: column !important;
-    align-items: center !important;
 
-  }
 
  
 }
