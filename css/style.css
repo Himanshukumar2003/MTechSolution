@@ -1925,7 +1925,7 @@ p.artficial:before{
     position: relative;
 }
 .article.special{
-    background: #fbf6f3;
+    background: #fff;
     border:1px solid #ddd;
     position: relative;
     text-align: center;
@@ -5611,6 +5611,37 @@ body.light-version {
     transition: width 0.4s ease;
 }
 
+
+
+.servies-cards{
+    padding: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white ;
+
+    
+}
+.service-icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #0166aa;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    }
+.service-img-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
 .service-card:hover::before {
     width: 100%;
 
@@ -5723,17 +5754,6 @@ color:#0166aa !important;
 
 
 
-.list-unstyled  li a:after {
-    content: '→';
-    font-weight: 700;
-    font-family: Font Awesome\ 5 Free;
-    color: #ffffff;
-    position: absolute;
-    right: 0;
-    vertical-align: middle;
-}
-
-
 
 .footer a:hover {
     text-decoration: underline;
@@ -5760,7 +5780,6 @@ color: rgba(255, 255, 255, 1)!important;
 padding-left: 10px;
 margin-bottom: 1.9rem;
 line-height: 1.2;
-border-left: 2px solid white !important;
 }
 
 
@@ -6066,7 +6085,7 @@ margin-bottom: 50px !important;
 
 
 
-@media (max-width: 767px) { 
+@media (max-width: 1580px) { 
     .dropdown-submenu:hover .dropdown-submenu-menu {
         display: block !important;
         position: static !important;

@@ -147,15 +147,25 @@
 document.addEventListener("DOMContentLoaded", function () {
   const elems = document.querySelectorAll(".dropdown-submenu .dropdown-toggle");
 
-  // console.log({ elems });
   elems.forEach(function (element) {
     element.addEventListener("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
-      console.log(e.target);
+
       var submenu = this.nextElementSibling;
-      console.log({ submenu });
-      submenu.classList.toggle("show");
+
+      if (submenu.classList.contains("show")) {
+        submenu.classList.remove("show");
+      } else {
+        const openSubmenus = document.querySelectorAll(
+          ".dropdown-submenu-menu.show"
+        );
+        openSubmenus.forEach(function (openSubmenu) {
+          openSubmenu.classList.remove("show");
+        });
+
+        submenu.classList.add("show");
+      }
     });
   });
 });
