@@ -6103,10 +6103,7 @@ margin-bottom: 50px !important;
 
   }
 
-  .number-box{
-    justify-content: center;
-    ;
-  }
+ 
 }
 
 .bg-six{
@@ -6120,3 +6117,21 @@ margin-bottom: 50px !important;
     max-height: 250px;
     object-fit: contain;
 }
+
+
+
+
+.logo-Section{
+   
+    overflow: hidden;
+    object-fit: contain;
+
+}
+
+
+.logo{
+    object-fit: contain;
+height: 60px;
+width: 100%;
+}
+
