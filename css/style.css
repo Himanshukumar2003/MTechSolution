@@ -788,7 +788,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
  .shrink {
     animation: .3s ease-in-out;
     animation-name: fadeInDown;
-    background-color: rgb(215, 223, 239);
+    background-color: #176cea;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -2654,7 +2654,7 @@ p.artficial:before{
     padding: 50px 30px;
 }
 .call-us-sec.v2{
-    background: url(../img/bg-img/bg8.jpg) no-repeat;
+    background: #172c80;
     background-size: cover
 }
 
@@ -6045,7 +6045,7 @@ margin-bottom: 50px !important;
 
 
 .navbar-toggler{
-    color: #0166aa !important
+    color: white !important
 }
 
 
