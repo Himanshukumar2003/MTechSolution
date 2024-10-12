@@ -5877,11 +5877,14 @@ line-height: 1.2;
     fill: currentColor;
 }
 
+.footer-logo{
+    width: 250px;
+}
 
 
 @media (max-width: 768px) {
     .footer-logo {
-margin-bottom: 50px !important;
+margin-bottom: 20px !important;
     }
 
     .footer h5 {
@@ -5909,6 +5912,17 @@ margin-bottom: 50px !important;
         line-height: 1.2;
         border-left: 0px !important;
     }
+
+
+    
+  .logo {
+    width: auto;
+    height: 50px !important;
+    object-fit: contain;
+    max-width: 100%; 
+    aspect-ratio: 3;
+}
+  
 }
 
 
