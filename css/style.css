@@ -4401,6 +4401,7 @@ textarea:required {
 .breadcumb--con .title {
     font-size: 42px;
     margin-bottom: 15px;
+    text-align: center !important;
     margin-left: 0;
     color: white !important;
 }
@@ -5882,11 +5883,15 @@ line-height: 1.2;
 }
 
 
+
+
+
 @media (max-width: 768px) {
     .footer-logo {
 margin-bottom: 20px !important;
     }
 
+   
     .footer h5 {
         font-size: 18px;
     }
