@@ -1,0 +1,138 @@
+
+
+  .dmr-overview-title, .dmr-feature-title {
+    color: #333; /* Custom blue color */
+  }
+  
+  .dmr-overview-text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .dmr-feature-list, .dmr-specs-list {
+    padding-left: 1rem;
+  }
+  
+  .dmr-feature-list li, .dmr-specs-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .dmr-feature-list li:before, .dmr-specs-list li:before {
+    content: "\00BB \00BB ";
+   color: #007bff; }
+  
+  .dmr-specs-title {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #333; /* Custom blue color */
+  }
+  /* Center the text in the table */
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Customize the table borders and padding */
+.table {
+    border: 2px solid #ddd;
+}
+
+.table th, .table td {
+    padding: 12px;
+}
+
+/* Adjust the width of the columns */
+.table td:first-child {
+    width: 50%;
+}
+
+.table td:last-child {
+    width: 50%;
+}
+
+/* Set a title styling */
+
+
+
+
+
+
+
+
+
+
+  
+  .tech-spec-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .spec-title {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .tech-spec-table th,
+  .tech-spec-table td {
+    vertical-align: middle;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .tech-spec-table thead th {
+    background-color: #f8f9fa;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .tech-spec-table th {
+    background-color: #e9ecef;
+  }
+  
+  .tech-spec-table tbody th {
+    background-color: #e9ecef;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+  }
+  
+  .tech-spec-table td {
+    text-align: left;
+  }
+  
+
+#thumbnailTwo{
+height: 100px;
+margin-top: 20px;
+}
+
+  /* Add border to the card */
+.accessory-card {
+    border: 1px solid orangered !important;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* Adjust the size of the images */
+.accessory-card img {
+    max-height: 200px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    padding: 10px;
+}
+
+/* Card text styling */
+.accessory-card .card-text {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Adjust the heading */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333 !important ;
+}
