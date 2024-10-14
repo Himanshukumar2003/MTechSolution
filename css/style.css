@@ -710,13 +710,14 @@ ol {
     background: #00008B;
 }
 .info-btn.more-btn:hover{
+    background: blue;
 
 }
 .info-btn.green-btn{
   background-color: #00008B;
 }
 .info-btn:hover {
-    background:#00008B;
+    background:blue;
     color: #fff;
 }
 
@@ -4389,7 +4390,6 @@ textarea:required {
 .breadcumb--con {
     padding-top: 90px;
 }
-
 .breadcrumb {
     padding: 0;
     margin-bottom: 0;
