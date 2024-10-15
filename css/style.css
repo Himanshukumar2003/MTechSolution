@@ -697,7 +697,7 @@ ol {
     color: #fff;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    background: #00008B;
+    background: blue;
     -webkit-transition: all 500ms;
     transition: all 500ms;
 }
@@ -707,17 +707,17 @@ ol {
     box-shadow: 0 0 15px 0 rgba(255, 125, 55, 0.9);
 */
 .info-btn.more-btn{
-    background: #00008B;
+    background: blue;
 }
 .info-btn.more-btn:hover{
-    background: blue;
+    background: darkblue;
 
 }
 .info-btn.green-btn{
-  background-color: #00008B;
+  background-color: blue;
 }
 .info-btn:hover {
-    background:blue;
+    background:#172c80;
     color: #fff;
 }
 
@@ -790,8 +790,8 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     
  .shrink {
     animation: .3s ease-in-out;
-    animation-name: fadeInDown;
-    background-color: blue;
+    animation-name: fadeInDown; 
+    background-color: #172c80;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -813,7 +813,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 /* mobile view */
 @media (max-width:500px)
 {
-    .navbar{ background:blue;}
+    .navbar{ background:darkblue;}
     .navbar-nav{
         border-top:1px solid #fed136;
         color:#fff;
@@ -849,7 +849,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     .navbar-expand-lg.navbar-dark {background: blue ;}
     .navbar-collapse{
         padding-top: 20px;
-        background: blue
+        background: darkblue;
     }
 }
 .navbar-white.shrink .navbar-brand,
@@ -2657,7 +2657,7 @@ p.artficial:before{
     padding: 50px 30px;
 }
 .call-us-sec.v2{
-    background: #172c80;
+    background: #003399;
     background-size: cover
 }
 
@@ -5409,7 +5409,7 @@ body.light-version {
     }
 }
 .bl-text{
-    color: #354168 !important
+    color: #13274F !important
 }
 .g-text{
     color: #d4d7e1 !important
