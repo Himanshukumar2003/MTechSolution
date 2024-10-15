@@ -179,11 +179,24 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the default form submission
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
+    // Get input values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const successFailInfo = document.getElementById("success_fail_info");
 
+    // Check if any required fields are empty
+    if (!name || !email || !subject) {
+      successFailInfo.innerHTML =
+        '<p style="color:red;">Please fill in all required fields.</p>';
+      return; // Exit the function if validation fails
+    }
+
+    // Clear previous error message
+    successFailInfo.innerHTML = "";
+
+    // Send the email
     emailjs
       .send("service_5wiixn4", "template_57w16ge", {
         name: name,
@@ -194,13 +207,13 @@ document
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
-          document.getElementById("success_fail_info").innerHTML =
+          successFailInfo.innerHTML =
             '<p style="color:green;">Message sent successfully!</p>';
-          document.getElementById("main_contact_form").reset();
+          document.getElementById("main_contact_form").reset(); // Clear input fields after submission
         },
         function (error) {
           console.log("FAILED...", error);
-          document.getElementById("success_fail_info").innerHTML =
+          successFailInfo.innerHTML =
             '<p style="color:red;">Message failed to send. Please try again later.</p>';
         }
       );
