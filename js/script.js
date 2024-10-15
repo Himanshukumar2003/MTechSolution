@@ -170,11 +170,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-emailjs.init("FKxzo41akIFhNOg0p");
+(function () {
+  emailjs.init("FKxzo41akIFhNOg0p"); // Your User ID from EmailJS
+})();
+
 document
   .getElementById("main_contact_form")
   .addEventListener("submit", function (event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent the default form submission
 
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
@@ -193,6 +196,7 @@ document
           console.log("SUCCESS!", response.status, response.text);
           document.getElementById("success_fail_info").innerHTML =
             '<p style="color:green;">Message sent successfully!</p>';
+          document.getElementById("main_contact_form").reset();
         },
         function (error) {
           console.log("FAILED...", error);
