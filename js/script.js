@@ -169,3 +169,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+emailjs.init("FKxzo41akIFhNOg0p");
+document
+  .getElementById("main_contact_form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    emailjs
+      .send("service_5wiixn4", "template_57w16ge", {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message,
+      })
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          document.getElementById("success_fail_info").innerHTML =
+            '<p style="color:green;">Message sent successfully!</p>';
+        },
+        function (error) {
+          console.log("FAILED...", error);
+          document.getElementById("success_fail_info").innerHTML =
+            '<p style="color:red;">Message failed to send. Please try again later.</p>';
+        }
+      );
+  });
