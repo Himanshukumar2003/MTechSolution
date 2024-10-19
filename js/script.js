@@ -39,7 +39,7 @@
           items: 3,
         },
         767: {
-          items: 1,
+          items: 2,
         },
       },
       loop: true,
