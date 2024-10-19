@@ -277,8 +277,7 @@ width: 100%;
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .choiceProduct {
-    padding: 30px 20px;
-    margin: 20px 10px;
+    padding: 30px 10px;
   }
 
   .choiceProduct-title {
