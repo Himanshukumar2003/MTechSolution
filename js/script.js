@@ -184,7 +184,7 @@ function setupRealTimeValidation(
   inputField.addEventListener("input", function () {
     const value = inputField.value.trim();
     if (validationFn(value)) {
-      errorField.innerHTML = ""; // Clear error if input is valid
+      errorField.innerHTML = ""; // Clear error if input is valid999h-
     } else {
       errorField.innerHTML = `<p style="color:red;">${errorMsg}</p>`; // Show error if input is invalid
     }
