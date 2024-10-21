@@ -268,7 +268,10 @@ document
           console.log("SUCCESS!", response.status, response.text);
           document.getElementById("success_fail_info").innerHTML =
             '<p style="color:green;">Message sent successfully!</p>';
-          document.getElementById("main_contact_form").reset(); // Clear form
+          document.getElementById("main_contact_form").reset();
+          setTimeout(function () {
+            document.getElementById("success_fail_info").innerHTML = "";
+          }, 5000);
         },
         function (error) {
           console.log("FAILED...", error);
@@ -278,7 +281,6 @@ document
       );
   });
 
-// Real-time validation setup for each input field
 setupRealTimeValidation(
   document.getElementById("name"),
   document.getElementById("nameError"),
