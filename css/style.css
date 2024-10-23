@@ -6110,7 +6110,7 @@ body.light-version {
     width: 100%;
 }
 
-#product-mid-section {
+.product-mid-section {
     padding: 20px;
 }
 
@@ -6118,7 +6118,7 @@ body.light-version {
     padding: 5px;
 }
 
-#product-mid-section h5 {
+.product-mid-section h5 {
     color: #222;
 
     display: -webkit-box;
