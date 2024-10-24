@@ -3,7 +3,7 @@
 
   var $window = $(window);
 
-  // :: Sticky Active Code
+  
   $window.on("scroll", function () {
     if ($(document).scrollTop() > 86) {
       $("#banner").addClass("shrink");
@@ -12,14 +12,14 @@
     }
   });
 
-  // :: Preloader Active Code
+  
   $window.on("load", function () {
     $("#preloader").fadeOut("1000", function () {
       $(this).remove();
     });
   });
 
-  // :: Sticky Active Code
+  
   $window.on("scroll", function () {
     if ($window.scrollTop() > 0) {
       $(".header-area").addClass("sticky");
@@ -28,7 +28,7 @@
     }
   });
 
-  // :: Carousel Active Code
+  
   if ($.fn.owlCarousel) {
     $(".client_slides").owlCarousel({
       responsive: {
@@ -59,7 +59,7 @@
     });
   }
 
-  // :: Magnific-popup Video Active Code
+  
   if ($.fn.magnificPopup) {
     $("#videobtn").magnificPopup({
       type: "iframe",
@@ -75,19 +75,19 @@
     });
   }
 
-  // :: ScrollUp Active Code
+  
   if ($.fn.scrollUp) {
     $.scrollUp({
       scrollSpeed: 1500,
       scrollText: "Scroll Top",
     });
   }
-  // :: Wow Active Code
+  
   if ($window.width() > 767) {
     new WOW().init();
   }
 
-  // :: Accordian Active Code
+  
   (function () {
     var dd = $("dd");
     dd.filter(":nth-child(n+3)").hide();
@@ -96,7 +96,7 @@
     });
   })();
 
-  // :: niceScroll Active Code
+  
   if ($.fn.niceScroll) {
     $(".timelineBody").niceScroll();
   }
@@ -169,12 +169,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-// email
+
 (function () {
-  emailjs.init("FKxzo41akIFhNOg0p");
+  emailjs.init("ZiGOKhJS1_g0I_jmM");
 })();
 
-// Real-time validation function
+
 function setupRealTimeValidation(
   inputField,
   errorField,
@@ -184,14 +184,14 @@ function setupRealTimeValidation(
   inputField.addEventListener("input", function () {
     const value = inputField.value.trim();
     if (validationFn(value)) {
-      errorField.innerHTML = ""; // Clear error if input is valid999h-
+      errorField.innerHTML = ""; 
     } else {
-      errorField.innerHTML = `<p style="color:red;">${errorMsg}</p>`; // Show error if input is invalid
+      errorField.innerHTML = `<p style="color:red;">${errorMsg}</p>`; 
     }
   });
 }
 
-// Function to validate email format
+
 function validateEmail(email) {
   const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   return re.test(String(email).toLowerCase());
@@ -200,15 +200,15 @@ function validateEmail(email) {
 document
   .getElementById("main_contact_form")
   .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault(); 
 
-    // Get input values
+    
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const subject = document.getElementById("subject").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    // Error display elements (placeholders above each field)
+    
     const nameError = document.getElementById("nameError");
     const emailError = document.getElementById("emailError");
     const subjectError = document.getElementById("subjectError");
@@ -216,7 +216,7 @@ document
 
     let isValid = true;
 
-    // Validation
+    
     if (!name) {
       nameError.innerHTML = '<p style="color:red;">Name is required.</p>';
       isValid = false;
@@ -249,15 +249,13 @@ document
     }
 
     if (!isValid) {
-      return; // Exit if validation fails
+      return; 
     }
 
-    // Clear previous error message
     document.getElementById("success_fail_info").innerHTML = "";
 
-    // Send the email using EmailJS
     emailjs
-      .send("service_5wiixn4", "template_57w16ge", {
+      .send("service_kpg6pt5", "template_m1niftv", {
         name: name,
         email: email,
         subject: subject,
