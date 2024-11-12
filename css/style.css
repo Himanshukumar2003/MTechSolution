@@ -6537,7 +6537,7 @@ img.position-absolute {
     font-size: 18px;
 }
 
-#list-unstyled li {
+.list-snd-unstyled li {
     list-style-type: none !important;
     border-bottom: none !important;
     color: #6c757d !important;
